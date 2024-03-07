@@ -18,13 +18,14 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-R8SGL0H;Initial Catalog=Equipo777;Integrated Security=True;");
 
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            txt_contra.MaxLength = 8;
+            txt_contra.PasswordChar = '*';
         }
 
         private void iniciar_Click(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace WindowsFormsApp1
 
             try {
 
-                String query = "SELECT * FROM usarios WHERE nombre ='"+txt_usuario.Text+"'AND contraseña='"+txt_contra.Text+"'";
+                String query = "SELECT * FROM usuarios WHERE usuario ='"+txt_usuario.Text+"'AND contraseña='"+txt_contra.Text+"'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 DataTable dataTable = new DataTable();
                 sda.Fill(dataTable);
@@ -66,9 +67,9 @@ namespace WindowsFormsApp1
                     txt_usuario.Clear();
                     txt_contra.Clear();
                 }
-            } catch {
+            } catch (Exception z){
 
-                MessageBox.Show("Error");
+                MessageBox.Show("Error"+z);
 
             } finally { 
                 conn.Close();
