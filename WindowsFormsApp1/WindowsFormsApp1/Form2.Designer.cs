@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.vAdmin = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
             this.SideBarContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -88,6 +87,7 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.button20 = new System.Windows.Forms.Button();
             this.sidebar = new System.Windows.Forms.Timer(this.components);
+            this.panel21 = new System.Windows.Forms.Panel();
             this.vAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SideBarContainer.SuspendLayout();
@@ -121,6 +121,7 @@
             // 
             // vAdmin
             // 
+            this.vAdmin.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.vAdmin.Controls.Add(this.tabPage1);
             this.vAdmin.Controls.Add(this.vEsta);
             this.vAdmin.Controls.Add(this.vReporte);
@@ -135,26 +136,17 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.SideBarContainer);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Controls.Add(this.panel21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(792, 318);
+            this.tabPage1.Size = new System.Drawing.Size(792, 315);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "vAdmin";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(376, 138);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "VISTA ADMIN";
             // 
             // SideBarContainer
             // 
@@ -334,11 +326,11 @@
             // 
             this.vEsta.Controls.Add(this.SideBarContainer2);
             this.vEsta.Controls.Add(this.label6);
-            this.vEsta.Location = new System.Drawing.Point(4, 22);
+            this.vEsta.Location = new System.Drawing.Point(4, 25);
             this.vEsta.Margin = new System.Windows.Forms.Padding(2);
             this.vEsta.Name = "vEsta";
             this.vEsta.Padding = new System.Windows.Forms.Padding(2);
-            this.vEsta.Size = new System.Drawing.Size(792, 318);
+            this.vEsta.Size = new System.Drawing.Size(792, 315);
             this.vEsta.TabIndex = 1;
             this.vEsta.Text = "vEsta";
             this.vEsta.UseVisualStyleBackColor = true;
@@ -528,10 +520,10 @@
             // 
             this.vReporte.Controls.Add(this.label7);
             this.vReporte.Controls.Add(this.SideBarContainer3);
-            this.vReporte.Location = new System.Drawing.Point(4, 22);
+            this.vReporte.Location = new System.Drawing.Point(4, 25);
             this.vReporte.Name = "vReporte";
             this.vReporte.Padding = new System.Windows.Forms.Padding(3);
-            this.vReporte.Size = new System.Drawing.Size(792, 318);
+            this.vReporte.Size = new System.Drawing.Size(792, 315);
             this.vReporte.TabIndex = 2;
             this.vReporte.Text = "vReporte";
             this.vReporte.UseVisualStyleBackColor = true;
@@ -720,10 +712,10 @@
             // 
             this.vUsuario.Controls.Add(this.label8);
             this.vUsuario.Controls.Add(this.SideBarContainer4);
-            this.vUsuario.Location = new System.Drawing.Point(4, 22);
+            this.vUsuario.Location = new System.Drawing.Point(4, 25);
             this.vUsuario.Name = "vUsuario";
             this.vUsuario.Padding = new System.Windows.Forms.Padding(3);
-            this.vUsuario.Size = new System.Drawing.Size(792, 318);
+            this.vUsuario.Size = new System.Drawing.Size(792, 315);
             this.vUsuario.TabIndex = 3;
             this.vUsuario.Text = "vUsuario";
             this.vUsuario.UseVisualStyleBackColor = true;
@@ -913,6 +905,14 @@
             this.sidebar.Interval = 10;
             this.sidebar.Tick += new System.EventHandler(this.sidebarTick);
             // 
+            // panel21
+            // 
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel21.Location = new System.Drawing.Point(2, 2);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(788, 311);
+            this.panel21.TabIndex = 2;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -924,7 +924,6 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.vAdmin.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.SideBarContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -982,7 +981,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TabPage vReporte;
         private System.Windows.Forms.TabPage vUsuario;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.FlowLayoutPanel SideBarContainer2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button6;
@@ -1023,5 +1021,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Timer sidebar;
+        private System.Windows.Forms.Panel panel21;
     }
 }
