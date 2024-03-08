@@ -18,11 +18,21 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        //sin uso
+        
         private void Form2_Load(object sender, EventArgs e)
         {
+            //Ocultar las tabs 
+            vAdmin.Appearance = TabAppearance.FlatButtons;
+            vAdmin.ItemSize = new Size(0, 1);
+            vAdmin.SizeMode = TabSizeMode.Fixed;
 
+            foreach (TabPage tab in vAdmin.TabPages)
+            {
+                tab.Text = "";
+            }
         }
+
+        //sin uso
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -113,6 +123,9 @@ namespace WindowsFormsApp1
         {
             sidebar.Start();
         }
+
+        
+
 
         //Tab Control paginas 1
         private void button1_Click(object sender, EventArgs e)
