@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-R8SGL0H;Initial Catalog=Equipo777;Integrated Security=True;");
+        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True;");
 
 
 
@@ -47,13 +47,15 @@ namespace WindowsFormsApp1
                     if (tUsuario == 1) {
                         Form2 form2 = new Form2();
                         form2.Show();
+                        this.Hide();
                         
                     }
                     else
                     {
                         Form3 form3 = new Form3();
                         form3.Show();
-                        
+                        this.Hide();
+
                     }
                                   
 

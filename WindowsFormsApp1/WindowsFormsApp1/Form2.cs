@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -18,9 +20,26 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        
+        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True;");
         private void Form2_Load(object sender, EventArgs e)
         {
+            try
+            {
+                string query = "SELECT * FROM usuarios";
+                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+                sda.Fill(dataTable);
+                dataGridView1.DataSource = dataTable;
+            }
+            catch (Exception r)
+            {
+                MessageBox.Show("Error" + r);
+            }
+            finally
+            {  
+                conn.Close(); 
+            }
+
             //Ocultar las tabs 
             vAdmin.Appearance = TabAppearance.FlatButtons;
             vAdmin.ItemSize = new Size(0, 1);
@@ -201,6 +220,43 @@ namespace WindowsFormsApp1
             vAdmin.SelectTab(3);
         }
 
-        
+        //Cerrar sesion
+
+        private void btn_cerrar1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_cerrar2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_cerrar3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_cerrar4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               
+
+            }
+            catch (Exception m)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
