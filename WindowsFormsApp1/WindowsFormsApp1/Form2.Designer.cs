@@ -44,6 +44,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.btn_cerrar1 = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
             this.vEsta = new System.Windows.Forms.TabPage();
             this.SideBarContainer2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -57,6 +60,8 @@
             this.button9 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.btn_cerrar2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.vReporte = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
@@ -72,8 +77,19 @@
             this.button14 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.button15 = new System.Windows.Forms.Button();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.btn_cerrar3 = new System.Windows.Forms.Button();
             this.vUsuario = new System.Windows.Forms.TabPage();
+            this.Contenedor = new System.Windows.Forms.Panel();
+            this.button22 = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.apellido_txt = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.id_txt = new System.Windows.Forms.TextBox();
+            this.nombre_txt = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SideBarContainer4 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.button16 = new System.Windows.Forms.Button();
@@ -86,8 +102,11 @@
             this.button19 = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
             this.button20 = new System.Windows.Forms.Button();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.btn_cerrar4 = new System.Windows.Forms.Button();
             this.sidebar = new System.Windows.Forms.Timer(this.components);
-            this.panel21 = new System.Windows.Forms.Panel();
+            this.actualizar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.vAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SideBarContainer.SuspendLayout();
@@ -96,6 +115,7 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel25.SuspendLayout();
             this.vEsta.SuspendLayout();
             this.SideBarContainer2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -103,6 +123,7 @@
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel24.SuspendLayout();
             this.vReporte.SuspendLayout();
             this.SideBarContainer3.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -110,13 +131,17 @@
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
+            this.panel23.SuspendLayout();
             this.vUsuario.SuspendLayout();
+            this.Contenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SideBarContainer4.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.SuspendLayout();
             // 
             // vAdmin
@@ -131,7 +156,7 @@
             this.vAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.vAdmin.Name = "vAdmin";
             this.vAdmin.SelectedIndex = 0;
-            this.vAdmin.Size = new System.Drawing.Size(800, 344);
+            this.vAdmin.Size = new System.Drawing.Size(886, 338);
             this.vAdmin.TabIndex = 0;
             // 
             // tabPage1
@@ -142,7 +167,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(792, 315);
+            this.tabPage1.Size = new System.Drawing.Size(878, 309);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "vAdmin";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -156,10 +181,11 @@
             this.SideBarContainer.Controls.Add(this.panel3);
             this.SideBarContainer.Controls.Add(this.panel4);
             this.SideBarContainer.Controls.Add(this.panel6);
+            this.SideBarContainer.Controls.Add(this.panel25);
             this.SideBarContainer.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBarContainer.Location = new System.Drawing.Point(2, 2);
             this.SideBarContainer.Margin = new System.Windows.Forms.Padding(2);
-            this.SideBarContainer.MaximumSize = new System.Drawing.Size(157, 318);
+            this.SideBarContainer.MaximumSize = new System.Drawing.Size(175, 318);
             this.SideBarContainer.MinimumSize = new System.Drawing.Size(62, 318);
             this.SideBarContainer.Name = "SideBarContainer";
             this.SideBarContainer.Size = new System.Drawing.Size(62, 318);
@@ -322,18 +348,56 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.panel25.Controls.Add(this.btn_cerrar1);
+            this.panel25.Location = new System.Drawing.Point(2, 263);
+            this.panel25.Margin = new System.Windows.Forms.Padding(2);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(173, 44);
+            this.panel25.TabIndex = 6;
+            // 
+            // btn_cerrar1
+            // 
+            this.btn_cerrar1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cerrar1.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar1.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrar1.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar1.Image")));
+            this.btn_cerrar1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar1.Location = new System.Drawing.Point(6, 4);
+            this.btn_cerrar1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_cerrar1.Name = "btn_cerrar1";
+            this.btn_cerrar1.Size = new System.Drawing.Size(187, 36);
+            this.btn_cerrar1.TabIndex = 1;
+            this.btn_cerrar1.Text = "             Cerrar Sesion";
+            this.btn_cerrar1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar1.UseVisualStyleBackColor = true;
+            this.btn_cerrar1.Click += new System.EventHandler(this.btn_cerrar1_Click);
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel21.Location = new System.Drawing.Point(2, 2);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(874, 305);
+            this.panel21.TabIndex = 2;
+            // 
             // vEsta
             // 
+            this.vEsta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.vEsta.Controls.Add(this.SideBarContainer2);
             this.vEsta.Controls.Add(this.label6);
             this.vEsta.Location = new System.Drawing.Point(4, 25);
             this.vEsta.Margin = new System.Windows.Forms.Padding(2);
             this.vEsta.Name = "vEsta";
             this.vEsta.Padding = new System.Windows.Forms.Padding(2);
-            this.vEsta.Size = new System.Drawing.Size(792, 315);
+            this.vEsta.Size = new System.Drawing.Size(878, 309);
             this.vEsta.TabIndex = 1;
             this.vEsta.Text = "vEsta";
-            this.vEsta.UseVisualStyleBackColor = true;
             // 
             // SideBarContainer2
             // 
@@ -343,10 +407,11 @@
             this.SideBarContainer2.Controls.Add(this.panel8);
             this.SideBarContainer2.Controls.Add(this.panel9);
             this.SideBarContainer2.Controls.Add(this.panel10);
+            this.SideBarContainer2.Controls.Add(this.panel24);
             this.SideBarContainer2.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBarContainer2.Location = new System.Drawing.Point(2, 2);
             this.SideBarContainer2.Margin = new System.Windows.Forms.Padding(2);
-            this.SideBarContainer2.MaximumSize = new System.Drawing.Size(157, 318);
+            this.SideBarContainer2.MaximumSize = new System.Drawing.Size(175, 318);
             this.SideBarContainer2.MinimumSize = new System.Drawing.Size(62, 318);
             this.SideBarContainer2.Name = "SideBarContainer2";
             this.SideBarContainer2.Size = new System.Drawing.Size(62, 318);
@@ -507,6 +572,35 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.panel24.Controls.Add(this.btn_cerrar2);
+            this.panel24.Location = new System.Drawing.Point(2, 263);
+            this.panel24.Margin = new System.Windows.Forms.Padding(2);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(173, 44);
+            this.panel24.TabIndex = 6;
+            // 
+            // btn_cerrar2
+            // 
+            this.btn_cerrar2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cerrar2.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar2.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrar2.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar2.Image")));
+            this.btn_cerrar2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar2.Location = new System.Drawing.Point(6, 4);
+            this.btn_cerrar2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_cerrar2.Name = "btn_cerrar2";
+            this.btn_cerrar2.Size = new System.Drawing.Size(187, 36);
+            this.btn_cerrar2.TabIndex = 1;
+            this.btn_cerrar2.Text = "             Cerrar Sesion";
+            this.btn_cerrar2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar2.UseVisualStyleBackColor = true;
+            this.btn_cerrar2.Click += new System.EventHandler(this.btn_cerrar2_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -518,15 +612,15 @@
             // 
             // vReporte
             // 
+            this.vReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.vReporte.Controls.Add(this.label7);
             this.vReporte.Controls.Add(this.SideBarContainer3);
             this.vReporte.Location = new System.Drawing.Point(4, 25);
             this.vReporte.Name = "vReporte";
             this.vReporte.Padding = new System.Windows.Forms.Padding(3);
-            this.vReporte.Size = new System.Drawing.Size(792, 315);
+            this.vReporte.Size = new System.Drawing.Size(878, 309);
             this.vReporte.TabIndex = 2;
             this.vReporte.Text = "vReporte";
-            this.vReporte.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -545,9 +639,10 @@
             this.SideBarContainer3.Controls.Add(this.panel13);
             this.SideBarContainer3.Controls.Add(this.panel14);
             this.SideBarContainer3.Controls.Add(this.panel15);
+            this.SideBarContainer3.Controls.Add(this.panel23);
             this.SideBarContainer3.Location = new System.Drawing.Point(2, 2);
             this.SideBarContainer3.Margin = new System.Windows.Forms.Padding(2);
-            this.SideBarContainer3.MaximumSize = new System.Drawing.Size(157, 318);
+            this.SideBarContainer3.MaximumSize = new System.Drawing.Size(175, 318);
             this.SideBarContainer3.MinimumSize = new System.Drawing.Size(62, 318);
             this.SideBarContainer3.Name = "SideBarContainer3";
             this.SideBarContainer3.Size = new System.Drawing.Size(62, 318);
@@ -708,26 +803,156 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.panel23.Controls.Add(this.btn_cerrar3);
+            this.panel23.Location = new System.Drawing.Point(2, 263);
+            this.panel23.Margin = new System.Windows.Forms.Padding(2);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(173, 44);
+            this.panel23.TabIndex = 5;
+            // 
+            // btn_cerrar3
+            // 
+            this.btn_cerrar3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cerrar3.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar3.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrar3.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar3.Image")));
+            this.btn_cerrar3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar3.Location = new System.Drawing.Point(6, 4);
+            this.btn_cerrar3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_cerrar3.Name = "btn_cerrar3";
+            this.btn_cerrar3.Size = new System.Drawing.Size(187, 36);
+            this.btn_cerrar3.TabIndex = 1;
+            this.btn_cerrar3.Text = "             Cerrar Sesion";
+            this.btn_cerrar3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar3.UseVisualStyleBackColor = true;
+            this.btn_cerrar3.Click += new System.EventHandler(this.btn_cerrar3_Click);
+            // 
             // vUsuario
             // 
-            this.vUsuario.Controls.Add(this.label8);
+            this.vUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.vUsuario.Controls.Add(this.Contenedor);
             this.vUsuario.Controls.Add(this.SideBarContainer4);
             this.vUsuario.Location = new System.Drawing.Point(4, 25);
             this.vUsuario.Name = "vUsuario";
             this.vUsuario.Padding = new System.Windows.Forms.Padding(3);
-            this.vUsuario.Size = new System.Drawing.Size(792, 315);
+            this.vUsuario.Size = new System.Drawing.Size(878, 309);
             this.vUsuario.TabIndex = 3;
             this.vUsuario.Text = "vUsuario";
-            this.vUsuario.UseVisualStyleBackColor = true;
+            // 
+            // Contenedor
+            // 
+            this.Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.Contenedor.Controls.Add(this.button22);
+            this.Contenedor.Controls.Add(this.btn_buscar);
+            this.Contenedor.Controls.Add(this.apellido_txt);
+            this.Contenedor.Controls.Add(this.label9);
+            this.Contenedor.Controls.Add(this.label8);
+            this.Contenedor.Controls.Add(this.label5);
+            this.Contenedor.Controls.Add(this.id_txt);
+            this.Contenedor.Controls.Add(this.nombre_txt);
+            this.Contenedor.Controls.Add(this.dataGridView1);
+            this.Contenedor.Location = new System.Drawing.Point(70, 7);
+            this.Contenedor.Name = "Contenedor";
+            this.Contenedor.Size = new System.Drawing.Size(805, 299);
+            this.Contenedor.TabIndex = 2;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.button22.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.Color.White;
+            this.button22.Location = new System.Drawing.Point(711, 40);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.TabIndex = 32;
+            this.button22.Text = "Insertar";
+            this.button22.UseVisualStyleBackColor = false;
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.btn_buscar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.ForeColor = System.Drawing.Color.White;
+            this.btn_buscar.Location = new System.Drawing.Point(630, 40);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
+            this.btn_buscar.TabIndex = 31;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // apellido_txt
+            // 
+            this.apellido_txt.Location = new System.Drawing.Point(274, 40);
+            this.apellido_txt.Name = "apellido_txt";
+            this.apellido_txt.Size = new System.Drawing.Size(100, 20);
+            this.apellido_txt.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(270, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(76, 21);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Apellido:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(341, 153);
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(146, 15);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "VISTA USUARIO";
+            this.label8.Size = new System.Drawing.Size(75, 21);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Nombre:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(23, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 21);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Id:";
+            // 
+            // id_txt
+            // 
+            this.id_txt.Location = new System.Drawing.Point(27, 40);
+            this.id_txt.Name = "id_txt";
+            this.id_txt.Size = new System.Drawing.Size(100, 20);
+            this.id_txt.TabIndex = 26;
+            // 
+            // nombre_txt
+            // 
+            this.nombre_txt.Location = new System.Drawing.Point(150, 40);
+            this.nombre_txt.Name = "nombre_txt";
+            this.nombre_txt.Size = new System.Drawing.Size(100, 20);
+            this.nombre_txt.TabIndex = 25;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(99)))), ((int)(((byte)(248)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.actualizar,
+            this.eliminar});
+            this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
+            this.dataGridView1.Location = new System.Drawing.Point(25, 69);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(761, 213);
+            this.dataGridView1.TabIndex = 24;
             // 
             // SideBarContainer4
             // 
@@ -737,9 +962,10 @@
             this.SideBarContainer4.Controls.Add(this.panel18);
             this.SideBarContainer4.Controls.Add(this.panel19);
             this.SideBarContainer4.Controls.Add(this.panel20);
+            this.SideBarContainer4.Controls.Add(this.panel22);
             this.SideBarContainer4.Location = new System.Drawing.Point(2, 2);
             this.SideBarContainer4.Margin = new System.Windows.Forms.Padding(2);
-            this.SideBarContainer4.MaximumSize = new System.Drawing.Size(157, 318);
+            this.SideBarContainer4.MaximumSize = new System.Drawing.Size(175, 318);
             this.SideBarContainer4.MinimumSize = new System.Drawing.Size(62, 318);
             this.SideBarContainer4.Name = "SideBarContainer4";
             this.SideBarContainer4.Size = new System.Drawing.Size(62, 318);
@@ -900,24 +1126,60 @@
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.panel22.Controls.Add(this.btn_cerrar4);
+            this.panel22.Location = new System.Drawing.Point(2, 263);
+            this.panel22.Margin = new System.Windows.Forms.Padding(2);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(173, 44);
+            this.panel22.TabIndex = 4;
+            // 
+            // btn_cerrar4
+            // 
+            this.btn_cerrar4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_cerrar4.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar4.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrar4.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar4.Image")));
+            this.btn_cerrar4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar4.Location = new System.Drawing.Point(6, 4);
+            this.btn_cerrar4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_cerrar4.Name = "btn_cerrar4";
+            this.btn_cerrar4.Size = new System.Drawing.Size(187, 36);
+            this.btn_cerrar4.TabIndex = 1;
+            this.btn_cerrar4.Text = "             Cerrar Sesion";
+            this.btn_cerrar4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cerrar4.UseVisualStyleBackColor = true;
+            this.btn_cerrar4.Click += new System.EventHandler(this.btn_cerrar4_Click);
+            // 
             // sidebar
             // 
             this.sidebar.Interval = 10;
             this.sidebar.Tick += new System.EventHandler(this.sidebarTick);
             // 
-            // panel21
+            // actualizar
             // 
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel21.Location = new System.Drawing.Point(2, 2);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(788, 311);
-            this.panel21.TabIndex = 2;
+            this.actualizar.Frozen = true;
+            this.actualizar.HeaderText = "Actualizar";
+            this.actualizar.Name = "actualizar";
+            this.actualizar.ReadOnly = true;
+            // 
+            // eliminar
+            // 
+            this.eliminar.Frozen = true;
+            this.eliminar.HeaderText = "Eliminar";
+            this.eliminar.Name = "eliminar";
+            this.eliminar.ReadOnly = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 344);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(886, 338);
             this.Controls.Add(this.vAdmin);
             this.Name = "Form2";
             this.Text = "Admin";
@@ -931,6 +1193,7 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
             this.vEsta.ResumeLayout(false);
             this.vEsta.PerformLayout();
             this.SideBarContainer2.ResumeLayout(false);
@@ -940,6 +1203,7 @@
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
             this.vReporte.ResumeLayout(false);
             this.vReporte.PerformLayout();
             this.SideBarContainer3.ResumeLayout(false);
@@ -949,8 +1213,11 @@
             this.panel13.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
+            this.panel23.ResumeLayout(false);
             this.vUsuario.ResumeLayout(false);
-            this.vUsuario.PerformLayout();
+            this.Contenedor.ResumeLayout(false);
+            this.Contenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.SideBarContainer4.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
@@ -958,6 +1225,7 @@
             this.panel18.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
+            this.panel22.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1019,8 +1287,27 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Timer sidebar;
         private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Button btn_cerrar4;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Button btn_cerrar1;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Button btn_cerrar2;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Button btn_cerrar3;
+        private System.Windows.Forms.Panel Contenedor;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.TextBox apellido_txt;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox id_txt;
+        private System.Windows.Forms.TextBox nombre_txt;
+        private System.Windows.Forms.DataGridViewButtonColumn actualizar;
+        private System.Windows.Forms.DataGridViewButtonColumn eliminar;
     }
 }
