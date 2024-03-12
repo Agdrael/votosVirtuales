@@ -156,7 +156,7 @@
             this.vAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.vAdmin.Name = "vAdmin";
             this.vAdmin.SelectedIndex = 0;
-            this.vAdmin.Size = new System.Drawing.Size(886, 338);
+            this.vAdmin.Size = new System.Drawing.Size(886, 345);
             this.vAdmin.TabIndex = 0;
             // 
             // tabPage1
@@ -167,7 +167,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(878, 309);
+            this.tabPage1.Size = new System.Drawing.Size(878, 316);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "vAdmin";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -383,7 +383,7 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(2, 2);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(874, 305);
+            this.panel21.Size = new System.Drawing.Size(874, 312);
             this.panel21.TabIndex = 2;
             // 
             // vEsta
@@ -840,7 +840,7 @@
             this.vUsuario.Location = new System.Drawing.Point(4, 25);
             this.vUsuario.Name = "vUsuario";
             this.vUsuario.Padding = new System.Windows.Forms.Padding(3);
-            this.vUsuario.Size = new System.Drawing.Size(878, 309);
+            this.vUsuario.Size = new System.Drawing.Size(878, 316);
             this.vUsuario.TabIndex = 3;
             this.vUsuario.Text = "vUsuario";
             // 
@@ -1162,24 +1162,20 @@
             // 
             // actualizar
             // 
-            this.actualizar.Frozen = true;
             this.actualizar.HeaderText = "Actualizar";
             this.actualizar.Name = "actualizar";
-            this.actualizar.ReadOnly = true;
             // 
             // eliminar
             // 
-            this.eliminar.Frozen = true;
             this.eliminar.HeaderText = "Eliminar";
             this.eliminar.Name = "eliminar";
-            this.eliminar.ReadOnly = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(886, 338);
+            this.ClientSize = new System.Drawing.Size(886, 345);
             this.Controls.Add(this.vAdmin);
             this.Name = "Form2";
             this.Text = "Admin";

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
@@ -18,8 +19,9 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True;");
-
+        // conexion lab SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True;");
+        // conexion casa Data
+            SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=Equipo777;Integrated Security=True;");
 
 
         private void Form1_Load(object sender, EventArgs e)

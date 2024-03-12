@@ -20,16 +20,21 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True;");
+        //labo SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True;");
+
+        //casa
+        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=Equipo777;Integrated Security=True;");
         private void Form2_Load(object sender, EventArgs e)
         {
             try
             {
                 string query = "SELECT * FROM usuarios";
-                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-                DataTable dataTable = new DataTable();
-                sda.Fill(dataTable);
-                dataGridView1.DataSource = dataTable;
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridView1.DataSource = dt;
+
+               
             }
             catch (Exception r)
             {
