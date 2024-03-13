@@ -32,12 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.vUsuario = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.nCiudadano = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.SideBarContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -52,7 +46,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
             this.btn_cerrar1 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.nCiudadano = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.SideBarContainer2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,7 +64,8 @@
             this.button10 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.SideBarContainer3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -80,7 +79,8 @@
             this.button16 = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
             this.button17 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.SideBarContainer4 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.button18 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -97,10 +97,6 @@
             this.side = new System.Windows.Forms.Timer(this.components);
             this.vUsuario.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.SideBarContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -108,21 +104,25 @@
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.SideBarContainer2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.SideBarContainer3.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.SideBarContainer4.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
@@ -141,7 +141,7 @@
             this.vUsuario.Location = new System.Drawing.Point(0, 0);
             this.vUsuario.Name = "vUsuario";
             this.vUsuario.SelectedIndex = 0;
-            this.vUsuario.Size = new System.Drawing.Size(800, 450);
+            this.vUsuario.Size = new System.Drawing.Size(800, 343);
             this.vUsuario.TabIndex = 0;
             // 
             // tabPage1
@@ -153,71 +153,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 424);
+            this.tabPage1.Size = new System.Drawing.Size(792, 317);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "vUsuario";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // nCiudadano
-            // 
-            this.nCiudadano.AutoSize = true;
-            this.nCiudadano.Location = new System.Drawing.Point(519, 201);
-            this.nCiudadano.Name = "nCiudadano";
-            this.nCiudadano.Size = new System.Drawing.Size(64, 13);
-            this.nCiudadano.TabIndex = 2;
-            this.nCiudadano.Text = "nCiudadano";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(519, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Informacion";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(482, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.flowLayoutPanel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "vAlcalde";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.flowLayoutPanel2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(792, 424);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "vPresi";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.flowLayoutPanel3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(792, 424);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "vdiputado";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // SideBarContainer
             // 
@@ -234,7 +173,7 @@
             this.SideBarContainer.MaximumSize = new System.Drawing.Size(175, 318);
             this.SideBarContainer.MinimumSize = new System.Drawing.Size(62, 318);
             this.SideBarContainer.Name = "SideBarContainer";
-            this.SideBarContainer.Size = new System.Drawing.Size(120, 318);
+            this.SideBarContainer.Size = new System.Drawing.Size(62, 318);
             this.SideBarContainer.TabIndex = 3;
             // 
             // panel1
@@ -422,23 +361,62 @@
             this.btn_cerrar1.UseVisualStyleBackColor = true;
             this.btn_cerrar1.Click += new System.EventHandler(this.btn_cerrar1_Click);
             // 
-            // flowLayoutPanel1
+            // nCiudadano
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
-            this.flowLayoutPanel1.Controls.Add(this.panel8);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel10);
-            this.flowLayoutPanel1.Controls.Add(this.panel11);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(175, 318);
-            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(62, 318);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(120, 318);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.nCiudadano.AutoSize = true;
+            this.nCiudadano.Location = new System.Drawing.Point(519, 201);
+            this.nCiudadano.Name = "nCiudadano";
+            this.nCiudadano.Size = new System.Drawing.Size(64, 13);
+            this.nCiudadano.TabIndex = 2;
+            this.nCiudadano.Text = "nCiudadano";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(519, 174);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Informacion";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(482, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.SideBarContainer2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 317);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "vAlcalde";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // SideBarContainer2
+            // 
+            this.SideBarContainer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.SideBarContainer2.Controls.Add(this.panel5);
+            this.SideBarContainer2.Controls.Add(this.panel7);
+            this.SideBarContainer2.Controls.Add(this.panel8);
+            this.SideBarContainer2.Controls.Add(this.panel9);
+            this.SideBarContainer2.Controls.Add(this.panel10);
+            this.SideBarContainer2.Controls.Add(this.panel11);
+            this.SideBarContainer2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBarContainer2.Location = new System.Drawing.Point(3, 3);
+            this.SideBarContainer2.Margin = new System.Windows.Forms.Padding(2);
+            this.SideBarContainer2.MaximumSize = new System.Drawing.Size(175, 318);
+            this.SideBarContainer2.MinimumSize = new System.Drawing.Size(62, 318);
+            this.SideBarContainer2.Name = "SideBarContainer2";
+            this.SideBarContainer2.Size = new System.Drawing.Size(62, 318);
+            this.SideBarContainer2.TabIndex = 1;
             // 
             // panel5
             // 
@@ -624,23 +602,34 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // flowLayoutPanel2
+            // tabPage3
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
-            this.flowLayoutPanel2.Controls.Add(this.panel12);
-            this.flowLayoutPanel2.Controls.Add(this.panel13);
-            this.flowLayoutPanel2.Controls.Add(this.panel14);
-            this.flowLayoutPanel2.Controls.Add(this.panel15);
-            this.flowLayoutPanel2.Controls.Add(this.panel16);
-            this.flowLayoutPanel2.Controls.Add(this.panel17);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel2.MaximumSize = new System.Drawing.Size(175, 318);
-            this.flowLayoutPanel2.MinimumSize = new System.Drawing.Size(62, 318);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(120, 318);
-            this.flowLayoutPanel2.TabIndex = 1;
+            this.tabPage3.Controls.Add(this.SideBarContainer3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(792, 317);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "vPresi";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // SideBarContainer3
+            // 
+            this.SideBarContainer3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.SideBarContainer3.Controls.Add(this.panel12);
+            this.SideBarContainer3.Controls.Add(this.panel13);
+            this.SideBarContainer3.Controls.Add(this.panel14);
+            this.SideBarContainer3.Controls.Add(this.panel15);
+            this.SideBarContainer3.Controls.Add(this.panel16);
+            this.SideBarContainer3.Controls.Add(this.panel17);
+            this.SideBarContainer3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBarContainer3.Location = new System.Drawing.Point(3, 3);
+            this.SideBarContainer3.Margin = new System.Windows.Forms.Padding(2);
+            this.SideBarContainer3.MaximumSize = new System.Drawing.Size(175, 318);
+            this.SideBarContainer3.MinimumSize = new System.Drawing.Size(62, 318);
+            this.SideBarContainer3.Name = "SideBarContainer3";
+            this.SideBarContainer3.Size = new System.Drawing.Size(62, 318);
+            this.SideBarContainer3.TabIndex = 1;
             // 
             // panel12
             // 
@@ -826,23 +815,34 @@
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // flowLayoutPanel3
+            // tabPage4
             // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
-            this.flowLayoutPanel3.Controls.Add(this.panel18);
-            this.flowLayoutPanel3.Controls.Add(this.panel19);
-            this.flowLayoutPanel3.Controls.Add(this.panel20);
-            this.flowLayoutPanel3.Controls.Add(this.panel21);
-            this.flowLayoutPanel3.Controls.Add(this.panel22);
-            this.flowLayoutPanel3.Controls.Add(this.panel23);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel3.MaximumSize = new System.Drawing.Size(175, 318);
-            this.flowLayoutPanel3.MinimumSize = new System.Drawing.Size(62, 318);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(127, 318);
-            this.flowLayoutPanel3.TabIndex = 1;
+            this.tabPage4.Controls.Add(this.SideBarContainer4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(792, 317);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "vdiputado";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // SideBarContainer4
+            // 
+            this.SideBarContainer4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.SideBarContainer4.Controls.Add(this.panel18);
+            this.SideBarContainer4.Controls.Add(this.panel19);
+            this.SideBarContainer4.Controls.Add(this.panel20);
+            this.SideBarContainer4.Controls.Add(this.panel21);
+            this.SideBarContainer4.Controls.Add(this.panel22);
+            this.SideBarContainer4.Controls.Add(this.panel23);
+            this.SideBarContainer4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBarContainer4.Location = new System.Drawing.Point(3, 3);
+            this.SideBarContainer4.Margin = new System.Windows.Forms.Padding(2);
+            this.SideBarContainer4.MaximumSize = new System.Drawing.Size(175, 318);
+            this.SideBarContainer4.MinimumSize = new System.Drawing.Size(62, 318);
+            this.SideBarContainer4.Name = "SideBarContainer4";
+            this.SideBarContainer4.Size = new System.Drawing.Size(62, 318);
+            this.SideBarContainer4.TabIndex = 1;
             // 
             // panel18
             // 
@@ -1030,23 +1030,21 @@
             // 
             // side
             // 
+            this.side.Interval = 10;
             this.side.Tick += new System.EventHandler(this.side_Tick);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 343);
             this.Controls.Add(this.vUsuario);
             this.Name = "Form3";
             this.Text = "Usuario";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.vUsuario.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
             this.SideBarContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1055,7 +1053,9 @@
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.SideBarContainer2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1063,7 +1063,8 @@
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.SideBarContainer3.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -1071,7 +1072,8 @@
             this.panel15.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.SideBarContainer4.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             this.panel19.ResumeLayout(false);
@@ -1107,7 +1109,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Button btn_cerrar1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel SideBarContainer2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label3;
@@ -1121,7 +1123,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel SideBarContainer3;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Label label4;
@@ -1135,7 +1137,7 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel SideBarContainer4;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Label label5;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,16 +17,49 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        //labo
+        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=prueba;Integrated Security=True;");
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            //Ocultar las tabs 
+            vUsuario.Appearance = TabAppearance.FlatButtons;
+            vUsuario.ItemSize = new Size(0, 1);
+            vUsuario.SizeMode = TabSizeMode.Fixed;
+
+            foreach (TabPage tab in vUsuario.TabPages)
+            {
+                tab.Text = "";
+            }
+        }
+
+        bool sideBarExpansion;
+        private void side_Tick(object sender, EventArgs e)
+        {
+            
+
+            Panel[] sideBarsContainers = { SideBarContainer, SideBarContainer2, SideBarContainer3, SideBarContainer4 };
+
+            int step = sideBarExpansion ? -10 : 10;
+
+            foreach (Panel container in sideBarsContainers)
+            {
+                container.Width += step;
+                if (sideBarExpansion && container.Width <= container.MinimumSize.Width || !sideBarExpansion && container.Width >= container.MaximumSize.Width)
+                {
+                    side.Stop();
+                    sideBarExpansion = !sideBarExpansion;
+                }
+
+            }
+
+        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void side_Tick(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button18_Click(object sender, EventArgs e)
         {
@@ -146,5 +180,7 @@ namespace WindowsFormsApp1
         {
             vUsuario.SelectTab(3);
         }
+
+        
     }
 }
