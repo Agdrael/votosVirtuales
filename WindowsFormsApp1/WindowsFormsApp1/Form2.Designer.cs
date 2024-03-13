@@ -81,7 +81,7 @@
             this.btn_cerrar3 = new System.Windows.Forms.Button();
             this.vUsuario = new System.Windows.Forms.TabPage();
             this.Contenedor = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
+            this.btn_insertar = new System.Windows.Forms.Button();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.apellido_txt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -105,8 +105,8 @@
             this.panel22 = new System.Windows.Forms.Panel();
             this.btn_cerrar4 = new System.Windows.Forms.Button();
             this.sidebar = new System.Windows.Forms.Timer(this.components);
-            this.actualizar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btn_actualizar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             this.vAdmin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SideBarContainer.SuspendLayout();
@@ -395,7 +395,7 @@
             this.vEsta.Margin = new System.Windows.Forms.Padding(2);
             this.vEsta.Name = "vEsta";
             this.vEsta.Padding = new System.Windows.Forms.Padding(2);
-            this.vEsta.Size = new System.Drawing.Size(878, 309);
+            this.vEsta.Size = new System.Drawing.Size(878, 316);
             this.vEsta.TabIndex = 1;
             this.vEsta.Text = "vEsta";
             // 
@@ -618,7 +618,7 @@
             this.vReporte.Location = new System.Drawing.Point(4, 25);
             this.vReporte.Name = "vReporte";
             this.vReporte.Padding = new System.Windows.Forms.Padding(3);
-            this.vReporte.Size = new System.Drawing.Size(878, 309);
+            this.vReporte.Size = new System.Drawing.Size(878, 316);
             this.vReporte.TabIndex = 2;
             this.vReporte.Text = "vReporte";
             // 
@@ -847,7 +847,9 @@
             // Contenedor
             // 
             this.Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.Contenedor.Controls.Add(this.button22);
+            this.Contenedor.Controls.Add(this.btn_eliminar);
+            this.Contenedor.Controls.Add(this.btn_actualizar);
+            this.Contenedor.Controls.Add(this.btn_insertar);
             this.Contenedor.Controls.Add(this.btn_buscar);
             this.Contenedor.Controls.Add(this.apellido_txt);
             this.Contenedor.Controls.Add(this.label9);
@@ -861,19 +863,19 @@
             this.Contenedor.Size = new System.Drawing.Size(805, 299);
             this.Contenedor.TabIndex = 2;
             // 
-            // button22
+            // btn_insertar
             // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
-            this.button22.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Location = new System.Drawing.Point(711, 40);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 23);
-            this.button22.TabIndex = 32;
-            this.button22.Text = "Insertar";
-            this.button22.UseVisualStyleBackColor = false;
+            this.btn_insertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.btn_insertar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_insertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_insertar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_insertar.ForeColor = System.Drawing.Color.White;
+            this.btn_insertar.Location = new System.Drawing.Point(550, 40);
+            this.btn_insertar.Name = "btn_insertar";
+            this.btn_insertar.Size = new System.Drawing.Size(75, 23);
+            this.btn_insertar.TabIndex = 32;
+            this.btn_insertar.Text = "Insertar";
+            this.btn_insertar.UseVisualStyleBackColor = false;
             // 
             // btn_buscar
             // 
@@ -882,7 +884,7 @@
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_buscar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar.ForeColor = System.Drawing.Color.White;
-            this.btn_buscar.Location = new System.Drawing.Point(630, 40);
+            this.btn_buscar.Location = new System.Drawing.Point(469, 40);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(75, 23);
             this.btn_buscar.TabIndex = 31;
@@ -945,9 +947,6 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(99)))), ((int)(((byte)(248)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.actualizar,
-            this.eliminar});
             this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
             this.dataGridView1.Location = new System.Drawing.Point(25, 69);
             this.dataGridView1.Name = "dataGridView1";
@@ -1160,15 +1159,33 @@
             this.sidebar.Interval = 10;
             this.sidebar.Tick += new System.EventHandler(this.sidebarTick);
             // 
-            // actualizar
+            // btn_actualizar
             // 
-            this.actualizar.HeaderText = "Actualizar";
-            this.actualizar.Name = "actualizar";
+            this.btn_actualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.btn_actualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_actualizar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_actualizar.ForeColor = System.Drawing.Color.White;
+            this.btn_actualizar.Location = new System.Drawing.Point(631, 40);
+            this.btn_actualizar.Name = "btn_actualizar";
+            this.btn_actualizar.Size = new System.Drawing.Size(75, 23);
+            this.btn_actualizar.TabIndex = 33;
+            this.btn_actualizar.Text = "Actualizar";
+            this.btn_actualizar.UseVisualStyleBackColor = false;
             // 
-            // eliminar
+            // btn_eliminar
             // 
-            this.eliminar.HeaderText = "Eliminar";
-            this.eliminar.Name = "eliminar";
+            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.btn_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_eliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.ForeColor = System.Drawing.Color.White;
+            this.btn_eliminar.Location = new System.Drawing.Point(711, 40);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(75, 23);
+            this.btn_eliminar.TabIndex = 34;
+            this.btn_eliminar.Text = "eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -1295,7 +1312,7 @@
         private System.Windows.Forms.Button btn_cerrar3;
         private System.Windows.Forms.Panel Contenedor;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button btn_insertar;
         private System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.TextBox apellido_txt;
         private System.Windows.Forms.Label label9;
@@ -1303,7 +1320,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox id_txt;
         private System.Windows.Forms.TextBox nombre_txt;
-        private System.Windows.Forms.DataGridViewButtonColumn actualizar;
-        private System.Windows.Forms.DataGridViewButtonColumn eliminar;
+        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.Button btn_actualizar;
     }
 }
