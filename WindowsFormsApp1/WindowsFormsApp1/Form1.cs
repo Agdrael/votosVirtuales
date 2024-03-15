@@ -14,6 +14,8 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        //diseño
+
         public Form1()
         {
             InitializeComponent();
